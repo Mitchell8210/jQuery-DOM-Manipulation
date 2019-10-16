@@ -1,0 +1,62 @@
+html{box-sizing: border-box}
+*,*::before,*::after{box-sizing: inherit}
+
+body{
+    background-color: rgb(31, 63, 73);
+    color:white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.accordianTabs{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    align-items: center;
+    width:400px;
+    height: 200px;
+    background-color: teal;
+    margin-bottom: 0px;
+    padding-top:20px;
+}
+.tabs{
+    width:100%;
+    height: 400px;
+    background-color: teal;
+    text-align: center;
+    margin:0px;
+    margin-bottom: 0px;
+}
+a{
+    height:50px;
+}
+.content {
+    height:0px;
+    overflow: hidden;
+    width:400px;
+    margin:auto;
+    border: 2px solid teal;
+    background-color: rgb(31, 63, 73);
+    transition: height 1s ease;
+}
+
+
+
+.show{
+    height:270px;
+}
+
+.tabs:nth-child(1) .content{
+    display: block;
+}
+.test{
+    width:100px;
+    height:100px;
+    background-color: red;
+    transition: height 1s ease, width 1s ease;
+}
+.test:hover{
+     height: 200px;
+     width:200px;
+
+
+}
